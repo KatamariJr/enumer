@@ -28,8 +28,7 @@ be almost meaningless or hard to trace or use by a human.
 the enum conform to the `json.Marshaler` and `json.Unmarshaler` interfaces. Very useful to use it in JSON APIs.
 * When the flag `bson` is provided, two additional methods will be generated, `MarshalBSONValue()` and `UnmarshalBSONValue()`. These make
 the enum conform to the `go.mongodb.org/mongo-driver/bson.ValueMarshaler` and `go.mongodb.org/mongo-driver/bson.ValueUnmarshaler` interfaces. 
-This can be used when inserting and retrieving enums 
-from MongoDB.
+This can be used when inserting and retrieving enums from MongoDB.
 * When the flag `text` is provided, two additional methods will be generated, `MarshalText()` and `UnmarshalText()`. These make
 the enum conform to the `encoding.TextMarshaler` and `encoding.TextUnmarshaler` interfaces. 
 **Note:** If you use your enum values as keys in a map and you encode the map as _JSON_, you need this flag set to true to properly
